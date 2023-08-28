@@ -25,11 +25,12 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className='mainContainer my-0'>
+      <div className='mainContainer my-0 w-full'>
         <TodoTitle />
         {this.state.todos.map((todo, index) => (<TodoContainer key={index}/>))}
         <TodoAddBtn handleAddTodo={this.handleAddTodo}/>
-      </div>
+    </div>
+
     )
   }
 }
